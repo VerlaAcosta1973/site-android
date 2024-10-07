@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Bebas";
+    src: url("../fontes/BebasNeue-Regular.ttf") format("opentype");
+
+}
+
+@font-face {
+    font-family: "Android";
+    src: url("../fontes/idroid.otf") format("opentype");
+}
+
+:root{
+    --cor0:#aaf6cc ;
+    --cor1:#83E1AD ;
+    --cor2:#5ec98e ;
+    --cor3:#509b71 ;
+    --cor4:#146037 ;
+    --cor5:#0e2619 ;
+    
+    --fonte-padrao: arial,verdana,helvetica,sans-serif;
+    --fonte-destaque: "Bebas", cursive;
+    --fonte-android: "Android", cursive;
+}
+
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.613);
+}
+
+header > p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin: auto;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.736);
+}
+
+nav{
+    background-color: var(--cor5);
+    box-shadow: 1px 7px 7px rgba(0, 0, 0, 0.333);
+}
+
+nav > a{
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.64);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+main img{
+    width: 95%;
+}
+
+main img.pequena{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+main h1, h2{
+    font-family: var(--fonte-android);
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    width: 35%;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 3px;
+}
